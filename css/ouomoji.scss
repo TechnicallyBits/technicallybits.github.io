@@ -1,0 +1,138 @@
+---
+---
+
+@charset "utf-8";
+
+h1, h2, h3, h4, h5, h6, body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+}
+
+// Nav
+.navbar-header img {
+  max-width: 50px;
+  max-height: 50px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.navbar-default .navbar-header {
+  .navbar-toggle {
+    font-size: 25px;
+    border: 0;
+    margin-bottom: 0;
+    margin-top: 8px;
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-brand {
+    font-weight: 500;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+.navbar-default .nav > li > a {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+// Header
+header {
+  background: linear-gradient(to bottom, #1252B3, rgb(13, 58, 126));
+
+  h1 {
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+  }
+  .header-content .header-content-inner h1 {
+    margin-bottom: 15px;
+    color: rgb(245, 245, 245);
+  }
+
+  .header-content .header-content-inner h2 {
+    margin-top: 15px;
+    color: rgb(245, 245, 245);
+  }
+
+  .img-responsive {
+    max-width: 100%;
+    max-height: 80%;
+    margin-top: 60px;
+    min-height: 350px;
+  }
+
+  .badges {
+    padding: 50px 0;
+  }
+}
+
+// Features
+.features {
+  padding: 70px 0;
+
+  .service-box {
+    padding: 20px 0;
+  }
+
+  i {
+    color: #1252B3;
+  }
+}
+
+@media(max-width: 768px) {
+  h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .navbar-header {
+    img {
+      margin: 0 10px 0 10px;
+    }
+    .navbar-brand {
+      margin-left: -15px;
+    }
+  }
+
+  .features .service-box {
+    padding: 20px 20px;
+  }
+
+  header {
+    .col-sm-7 .header-content {
+      padding: 150px 0 0;
+    }
+    .col-sm-5 .header-content {
+      padding: 0;
+      margin: 0px 0 0px;
+    }
+    .img-responsive {
+      max-height: 75vh;
+      max-width: 75vw;
+      width: auto;
+      height: auto;
+      margin: 0 auto 80px;
+    }
+    .badges .badge-link img {
+      height: 60px;
+    }
+  }
+}
